@@ -7,10 +7,16 @@ void main(){
 }
 
 class MyApp extends StatelessWidget{
+  
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home:Center(child: Text('hola mundi')),
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home:Scaffold(
+        body: Center(child: Text('hola mundi')),
+      ),
     );
   }
 
